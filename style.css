@@ -1,0 +1,94 @@
+.container {
+    margin: 0 auto;
+}
+
+.textarea {
+    display: block;
+    width: 600px;
+    height: 150px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.caseDown,
+.caseUp,
+.shiftCaps,
+.caps {
+    display: block;
+    width: 100;
+    min-height: 40px;
+}
+
+.hidden { display: none; }
+
+.description,
+.language,
+.title {
+    margin: 10px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.language::before {
+    content: "Current language: ";
+}
+
+.keyboard {
+    width: 705px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-right: 2px;
+    background: #888888;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.keyboard .row {
+    clear: both;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.keyboard .key {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.keyboard .key:hover {
+    background: #666666;
+}
+
+.keyboard .key.active {
+    background: #0000ff;
+    border-radius: 5px;
+}
+
+.keyboard .Tab { width: 53px; }
+
+.keyboard .Backspace,
+.keyboard .CapsLock,
+.keyboard .ShiftLeft,
+.keyboard .Enter,
+.keyboard .ShiftRight { width: 92px; }
+
+.keyboard .ControlLeft { width: 80px; }
+
+.keyboard .Space { width: 330px; }
